@@ -5,6 +5,19 @@
 	.promo{
 		padding: 21px 17px 10px 17px;
 	}
+	.consultation{
+		.title_left{
+			text-align: center;
+		}
+		&__text{
+			text-align: center;
+			margin-top: 28px;
+		}
+		.feed-form{
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	}
 }  
 @media (max-width: 767px){
 	.promo{
@@ -133,6 +146,11 @@
 		}
 		
 	}
+	.consultation{
+		.title_left{
+			font-size: 24px;
+		}
+	}
 }
 @media(max-width:374px){
 	.header{
@@ -152,6 +170,17 @@
 			font-size: 11px;
 		}
 	}
-
+	.consultation{
+		.title_left{
+			font-size: 18px;
+		}
+		&__text{
+			font-size: 15px;
+		}
+	
+		.feed-form{
+			width: 250px;
+		}
+	}
 }
 	
