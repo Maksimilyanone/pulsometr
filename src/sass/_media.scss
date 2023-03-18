@@ -1,6 +1,20 @@
+
 @media (max-width: 1200px ){
 
+	
+
 }
+@media (max-width: 1024px ){
+	.corusel{
+		.owl-carousel{
+			width: 74%;
+			img{
+				width: 69%;
+			}
+		}
+	}
+}
+
 @media (max-width: 991px){
 	.promo{
 		padding: 21px 17px 10px 17px;
@@ -116,7 +130,8 @@
 	}
 	.catalog{
 		.catalog__tab{
-			width: 166px;
+			width: 106px;
+			font-size: 10px;
 		}
 		.catalog__content{
 			justify-content: center;
@@ -127,9 +142,17 @@
 			padding: 0 20px;
 		}
 	}
+	.footer{
+		margin-top: 180px;
+	}
+	.footer{
+		.footer__dscr{
+			width: 429px;
+		}
+	}
 	
 }
-@media(max-width:424px){
+@media(max-width:425px){
 	.promo{
 		&__header{
 			font-size: 27px;
@@ -189,8 +212,8 @@
 	}
 	.catalog{
 		.catalog__tab{
-			width: 115px;
-			font-size: 11px;
+			width: 91px;
+			font-size: 10px;
 		}
 
 	}
@@ -217,9 +240,14 @@
 			text-align: center;
 		}
 	}
+	.footer{
+		.footer__dscr{
+			width: 382px;
+		}
+	}
 	
 }
-@media(max-width:374px){
+@media(max-width:375px){
 	.header{
 		display: none;
 	}
@@ -264,12 +292,32 @@
 	}
 	.catalog{
 		.catalog__tab{
-			width: 99px;
+			width: 59px;
+			font-size: 0;
 		}
 	}
 	.rewiew{
 		.rewiew__dscr{
 			margin-left: 38px;
+		}
+	}
+	.footer{
+		.footer__dscr{
+			width: 322px;
+		}
+	}
+}
+
+@media(max-width:320px){
+	.catalog{
+		.catalog__tab{
+			width: 66px;
+			font-size: 0;
+		}
+	}	
+	.footer{
+		.footer__dscr{
+			width: 319px;
 		}
 	}
 }
