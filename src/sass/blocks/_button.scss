@@ -30,6 +30,10 @@
 		line-height: normal;
 		text-align: center;
 		text-transform: uppercase;
+	&_mini{
+		width: 131px;
+		height: 40px;
+	}	
 	}
 	&:hover{
 		background: linear-gradient(-110deg, #b0ec08, #00ff40);

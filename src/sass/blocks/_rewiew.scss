@@ -1,0 +1,50 @@
+.rewiew{
+    &__wrapper{
+        margin-top: 70px;
+    }
+    &__people{
+        display: flex;
+
+    }
+    &__img{
+        width: 169px;
+        height: 169px;
+    }
+    &__dscr{
+        width: 650px;
+        height: 240px;
+        margin-left: 60px;
+    }
+    hr{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+    }
+    &__name{
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+    }
+    &__maraphone{
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+    }
+    &__boi{
+        margin-top: 19px;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+    }
+
+}

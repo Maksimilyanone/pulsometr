@@ -11,13 +11,21 @@
 		}
 		&__text{
 			text-align: center;
-			margin-top: 28px;
 		}
 		.feed-form{
 			margin: 0 auto;
 			margin-top: 20px;
 		}
 	}
+	.corusel{
+		padding: 82px 0;
+		.owl-carousel{
+			width: 500px;
+			margin: 0 auto;
+			position: relative;
+		}
+	}
+	
 }  
 @media (max-width: 767px){
 	.promo{
@@ -51,6 +59,7 @@
 	.advanteges__text{
 		font-size: 23px;
 	}
+
 }
 @media(max-width:575px){
 	.promo{
@@ -91,6 +100,32 @@
 	.button_main{
 		margin: auto;
 		margin-top: 50px;
+	}
+
+	.corusel{
+		padding: 82px 0;
+		.owl-carousel{
+			width: 387px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.owl-item {
+			width: 80%;
+		}
+
+	}
+	.catalog{
+		.catalog__tab{
+			width: 166px;
+		}
+		.catalog__content{
+			justify-content: center;
+		}
+	}
+	.rewiew{
+		&__wrapper{
+			padding: 0 20px;
+		}
 	}
 	
 }
@@ -150,7 +185,39 @@
 		.title_left{
 			font-size: 24px;
 		}
+		
 	}
+	.catalog{
+		.catalog__tab{
+			width: 115px;
+			font-size: 11px;
+		}
+
+	}
+	.rewiew{
+		&__people{
+			flex-direction: column;
+		}
+		&__img{
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		.rewiew__dscr{
+			height: 350px;
+			width: 280px;
+		}
+		.rewiew__boi{
+			font-size: 18px;
+		}
+		.rewiew__name{
+			text-align: center;
+		}
+		.rewiew__maraphone{
+			text-align: center;
+		}
+	}
+	
 }
 @media(max-width:374px){
 	.header{
@@ -182,5 +249,27 @@
 			width: 250px;
 		}
 	}
+	.corusel{
+		padding: 82px 0;
+		.owl-carousel{
+			width: 250px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.owl-item{
+			img{
+				width: 65%;
+			}
+		}
+	}
+	.catalog{
+		.catalog__tab{
+			width: 99px;
+		}
+	}
+	.rewiew{
+		.rewiew__dscr{
+			margin-left: 38px;
+		}
+	}
 }
-	

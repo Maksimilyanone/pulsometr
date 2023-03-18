@@ -5,6 +5,7 @@
 .container{
 	max-width: 950px;
 	margin: 0 auto;
+	position: relative;
 }
 @import'blocks/promo';
 @import'blocks/header';
@@ -15,3 +16,5 @@
 @import'blocks/title';
 @import'blocks/forms';
 @import'blocks/corusel';
+@import'blocks/catalog';
+@import'blocks/rewiew'
