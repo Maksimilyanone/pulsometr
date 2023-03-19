@@ -54,7 +54,86 @@ $(document).ready(function(){
       }
       toggleSlide('.catalog-item__link');
       toggleSlide('.catalog-item__back');
-    
+
+      //modul windows
+      $('[data-modal=consultation]').on('click', function(){
+        $('.overlay , #consultation').fadeIn();
+      });
+      $('.modal__close').on('click', function(){
+        $('.overlay, #consultation, #order, #thanks').fadeOut();
+      });
+      
+      $('.button_mini').each(function(i){
+        $(this).on('click', function(){
+            $('.modal__dscr').text($('.catalog-item__sub').eq(i).text());
+            $('.overlay, #order').fadeIn();
+        });
+      });
+    //   function validateForms(form){
+    //     $(form).validate({
+    //         rules: {
+    //             name: {
+    //                 required: true,
+    //                 minlength: 2
+    //             },
+    //             phone: "required",
+    //             email: {
+    //                 required: true,
+    //                 email: true
+    //             }
+    //         },
+    //         messages: {
+    //             name: {
+    //                 required: "Пожалуйста, введите свое имя",
+    //                 minlength: jQuery.validator.format("Введите {0} символа!")
+    //               },
+    //             phone: "Пожалуйста, введите свой номер телефона",
+    //             email: {
+    //               required: "Пожалуйста, введите свою почту",
+    //               email: "Неправильно введен адрес почты"
+    //             }
+    //         }
+    //     });
+    // };
+
+    // validateForms('#consultation-form');
+    // validateForms('#consultation form');
+    // validateForms('#order form');
+
+    //   $('.feed-form').validate();
+      function validateForms(form){
+        $(form).validate({
+            rules:{
+                name:{
+                required: true,
+                maxlength:20,
+
+                 },
+                phone:"required",
+                email:{
+                    required:true,
+                    email:true,
+                }
+              },
+                messages: {
+                name: { 
+                    required: "Введите свое имя и фамилию",
+                    maxlength: jQuery.validator.format("допустимый придел  {0} символов!")
+                },
+                phone:"Ведите свой номер телефона",
+                email: {
+                  required: "Для связи с Вами необходимо ввести эл.почту",
+                  email: "некоректно введет адрес эл.почты",
+                }
+              }
+        });
+        
+      }
+        validateForms('#consultation-form');
+        validateForms('#consultation form');
+        validateForms('#order form');
+        
+   
   });
 
  
